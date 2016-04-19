@@ -1,0 +1,155 @@
+/*
+Some examples are derived from http://www.w3schools.com/cssref/tryit.asp?filename=trycss_float6
+while others are derived from http://joowh.com/
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic);
+/* these properties will apply to the body of the page */
+html{
+    min-height:100%;/* make it as tall as the viewport */
+    position:relative;
+    background-image:url("res/background.jpg");
+    background-size: cover;
+}
+
+body{
+    background-color: #F8F8F8;
+    height:100%;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Karla', san-serif;
+ }
+
+h1 { font-size: 22px;  line-height: 165%;}
+h2 { font-size: 16px;  line-height: 165%;}
+h3 { font-size: 14px;  line-height: 150%;}
+
+h1.header { padding:0;  margin:0;}
+
+div.header{
+    /*clear: both;  !*No floating elements allowed on the left or the right side of a specified  element*!*/
+    background: #F8F8F8;
+    margin-top: 0px;
+    position: fixed; /*Keep container visible even as page scrolls*/
+    width: 100%;
+    top: 0px;
+    padding-top: 15px;
+    font-family: 'Karla', san-serif;
+    text-align: center;
+}
+
+div.content {
+    padding:0.5em;
+    margin: 30px;
+    background: #F8F8F8;
+    clear:left;
+    text-align: center;
+    line-height:150%;
+    margin-top: 90px;
+}
+
+div.footer {
+    padding:0.5em;
+    background: #F8F8F8;
+    clear:left;
+    text-align: center;
+}
+
+div.left{
+    float:left;
+    width:160px;
+    margin:0;
+    padding:1em;
+}
+
+div.right{
+    float:right;
+    width:160px;
+    margin:0;
+    padding:1em;
+}
+
+
+#lightTheme {
+    width: 640px;
+    position: relative;
+    margin: auto;
+}
+
+#darkTheme {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    color: white;
+}
+
+
+ul {
+    padding:0.5em;
+    clear:left;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: none;
+    display:inline-block;
+
+    margin-left: 15px;       /* This is when the drop down box appears */
+
+    position: relative;
+}
+
+.show {display:block;}
+
+button.myButton
+{
+    background-color:#F8F8F8;
+    color: black;
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+div.dropdown
+{
+    display:inline-block;
+}
+
+div.dropdown-content
+{
+    display: none;
+}
+
+div.dropdown:hover div.dropdown-content
+{
+
+    display: block;
+}
+
+div.dropdown-content a
+{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+div.dropdown-content a:hover
+{
+    background-color: #f1f1f1;
+}
+
+td.cell
+{
+    padding:0.5em;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
