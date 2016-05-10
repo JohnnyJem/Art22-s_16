@@ -2,21 +2,12 @@
 <html lang="en"> <!-- this is the start of the actual HTML -->
 
 <head> <!-- header stuff: page title, styles, scripts-->
-    <title> Homework 1 </title>
+    <title> Homework 2 </title>
     <link rel="stylesheet" type="text/css" href="main.css"> <!-- this imports our css file  -->
 </head>
 
+
 <body>
-
-<style>
-    html{
-    min-height:100%;/* make it as tall as the viewport */
-    position:relative;
-    background-image:url("res/background.jpg");
-    background-size: cover;
-}
-</style>
-
 
     <header>
         <div class="header"><h1 class="header">ART 22</h1>
@@ -33,13 +24,20 @@
     </header>
 
     <div class="content">
-        <h2>Homework 1</h2>
-        <p>This websites structural components consists of a fixed header div holding a title and below it a navigation drop down menu, a main content div holding tables and lists, and a footer div.</p>
-        <p>CSS properties included the stylizing of drop-down content and buttons, a custom font named <i>Karla</i>, centered text alignment, and margins without borders.</p>
-        <p>Included on this page is a background image.</p>
+        <h2>Programming Exercise 2</h2>
+         <p>Write your own function to animate the position of an image up and down or left to right on the screen. When the image fully disappears from one end of the screen, its bottom (or right side, depending on what directionality you choose) should appear from the other end, as if the screen is a cyclical object. Use our in-class fade example as a reference as well as w3schools animation page:</p>
+             <p>Create a button that upon being pressed calls a function that chooses a random image from your folder and replaces this image with the current one.</p>
         <p>Extra features include: button styling, dropdown:hover; properties, and cursor: pointer; properties.</p>
+
+        <button class="myButton" onclick="pickRandom()">Click Me!</button>
+        <div id = "projectContainer">
+            <!--Image Placeholder-->
+            <img id="img1" src="res/hw2/linkMovingDown.gif"/>
+        </div>
         <div class="footer">Copyright 2015 by Johnny Molina.</div>
+    </div>
 
 </body>
-
+<!--load javascript last-->
+<script type="text/javascript" src="homework2script.js"></script>
 </html>

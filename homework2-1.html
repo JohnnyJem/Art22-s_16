@@ -1,0 +1,57 @@
+<!DOCTYPE html>  <!-- this declares the document we are writing is HTML -->
+<html lang="en"> <!-- this is the start of the actual HTML -->
+
+<head> <!-- header stuff: page title, styles, scripts-->
+    <title> Homework 2 </title>
+    <link rel="stylesheet" type="text/css" href="main.css"> <!-- this imports our css file  -->
+</head>
+
+
+<body>
+
+<header>
+    <div class="header"><h1 class="header">ART 22</h1>
+        <div class = "dropdown">
+            <button class = "myButton"><img src="res/ic_keyboard_arrow_down_black_24dp_2x.png" width="24" height="24"></button>
+            <div class = "dropdown-content">
+                <a href = "index.html"> Home </a>
+                <a href = "about.html"> About </a>
+                <a href = "projects.html"> Projects </a>
+                <a href = "finalproject.html"> Final </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="content">
+    <h2>Programming Exercise 2.1 LOOPS</h2>
+    <p>Remember the moving image example you did for HW#2?
+        Now, you need to do the same thing for multiple images (at least 4) using for loop.
+        It should look like a continuous film strip wrapping around.
+        This time you need to also add two buttons to control the speed of your moving image strip, one button for increasing the speed and the other for decreasing.
+</p>
+        <p>You need to create 3 functions</p>
+
+       <p>The 1st function will be a static display of your images in a strip and should be triggered as soon as the page loads.</p>
+
+        <p>The 2nd function will allow the motion of your images and should be called back over and over.</p>
+
+        <p>The 3rd function will allow you to adjust the speed of your moving film strip and will be attached to your buttons.</p>
+
+    <button class="myButton" onclick="pickRandom()">Click to Randomize!</button>
+    <button class="myButton" onclick="increaseSpeed()">Click to Speed Up</button>
+    <button class="myButton" onclick="decreaseSpeed()">Click to Slow Down</button>
+    <div id = "projectContainer">
+        <!--Image Placeholder-->
+        <img id="img1" src="res/hw2/linkMovingDown.gif"/>
+        <img id="img2" src="res/hw2/linkMovingDownPurple.gif"/>
+        <img id="img3" src="res/hw2/linkMovingDownRed.gif"/>
+        <img id="img4" src="res/hw2/fairy.gif"/>
+    </div>
+    <div class="footer">Copyright 2015 by Johnny Molina.</div>
+</div>
+
+</body>
+<!--load javascript last-->
+<script type="text/javascript" src="homework2-1script.js"></script>
+</html>

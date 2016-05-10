@@ -151,5 +151,40 @@ td.cell
     text-align: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+}
+
+
+#projectContainer {
+    border: 2px solid black;
+    cursor: pointer;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+    width: 30px;
+    height: 130px;
+    position: relative;
+    overflow: hidden
+}
+
+#img1
+{
+display: block;
+position: absolute;
+}
+
+#img2
+{
+    display: block;
+    position: absolute;
+}
+
+#img3
+{
+    display: block;
+    position: absolute;
+}
+#img4
+{
+    display: block;
+    position: absolute;
 }
