@@ -23,7 +23,7 @@ function preload() {
 
 function setup() {
   ///create canvas and load image
-  createCanvas(img.width, img.height); 
+  createCanvas(img.width, img.height);
   ellipseMode(CENTER);
   ///visual choices
   colorMode(HSB, 360, 100, 100);
